@@ -1,3 +1,15 @@
+:root {
+    --neon-blue: #2aefcb;
+    --space-dust: #33393f;
+    --gin: rgb(94, 169, 94);
+    --ruby: rgb(184, 80, 80);
+}
+
+::selection {
+    background-color: var(--space-dust);
+    color: var(--neon-blue);
+}
+
 body {
     display: flex;
     flex-direction: column;
@@ -7,28 +19,117 @@ body {
 
 header {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(0, 0, 0);
+    padding: 0.5rem 1rem;
+    background-color: var(--space-dust);
+    color: var(--neon-blue);
+    border: 2px solid var(--gin);
+    border-radius: 8px;
+    outline: 2px var(--gin);
     min-height: 50px;
+    justify-content: space-between;
+    background-color: var(--space-dust);
+    transition: all 0.5s ease-in-out;
 }
 
 h1 {
     font-family: OCR-A-Std, monospace;
-    color: rgb(26, 186, 200);
-    font-size: 200%;
+    color: var(--neon-blue);
+    font-size: 250%;
     font-weight: bold;
-
+    margin-left: 15px;
+    
 }
+
+h2 {
+    font-family: monospace;
+    font-size: 20px;
+}
+
+p {
+    font-weight: bolder;
+}
+
 nav ul {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     min-width: 400px;
-    /*margin or padding here*/
+    padding-top: 30px;
+    margin-right: 15px;
+   /*margin or padding here*/
 }
 
 nav a {
+    display: flex;
     font-family: andale-mono, monospace;
-    color: rgb(26, 186, 200);
+    color: var(--neon-blue);
     text-decoration: underline;
+    justify-content: space-between;
+}
+
+header:hover {
+    box-shadow: inset 0 0 20px var(--gin);
+}
+
+nav a:hover {
+    color: var(--ruby);
+    transition: all 0.1s ease-in-out;  
+}
+
+figure:hover {
+}
+
+a {
+    color:aliceblue;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-left: -1.5rem;
+    margin-right: -1.5rem;
+}
+
+.justify-center {
+    justify-content: center;
+  }
+  
+
+.justify-left {
+    justify-content: left;
+}
+
+.card-column {
+    flex: 1 0 100%;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.code-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    min-height: 100%;
+    max-width: fit-content;
+    margin: 1rem 0 1.5rem 0;
+    background-color: var(--space-dust);
+    color: var(--ruby);
+    border-radius: 8px;
+    
+}
+.code-box-big {
+    position: relative;
+    max-width: 20%;
+    margin: -4rem 0 1.5rem 0;
+    padding: 0.5rem 1rem;
+    background-color: var(--space-dust);
+    color: var(--neon-blue);
+    border: 2px solid var(--gin);
+    border-radius: 8px;
+    transition: all 0.5s ease-in-out;
+    align-items: center;
+}
+
+.code-box-big:hover {
+    box-shadow: inset 0 0 20px var(--gin);
 }
