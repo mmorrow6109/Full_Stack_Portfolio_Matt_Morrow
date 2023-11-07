@@ -23,7 +23,7 @@ body {
 header {
     display: flex;
     padding: 0.5rem 1rem;
-    opacity: .8;
+    opacity: 0.9;
     border: 2px solid var(--gin);
     border-radius: 8px;
     outline: 2px var(--gin);
@@ -36,7 +36,7 @@ header {
 h1 {
     font-family: monospace;
     color: var(--neon-blue);
-    font-size: 250%;
+    font-size: 35px;
     font-weight: bold;
     margin-left: 8.5%;
     
@@ -44,7 +44,7 @@ h1 {
 
 h2 {
     font-family: monospace;
-    font-size: 20px;
+    font-size: 25px;
 }
 
 p {
@@ -64,6 +64,7 @@ nav ul {
 nav a {
     display: flex;
     font-family: monospace;
+    font-size: 20px;
     color: var(--neon-blue);
     text-decoration: underline;
     justify-content: space-between;
@@ -78,9 +79,6 @@ nav a:hover {
     transition: all 0.1s ease-in-out;  
 }
 
-figure:hover {
-}
-
 a {
     color:aliceblue;
 }
@@ -88,7 +86,7 @@ a {
 .row {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
+    flex-direction: column;
     margin-left: -1.5rem;
     margin-right: -1.5rem;
 }
@@ -103,6 +101,9 @@ a {
 }
 
 .card-column {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
     flex: 1 0 100%;
     padding: 1.5rem;
     margin-bottom: 1.5rem;
@@ -122,13 +123,16 @@ a {
 }
 
 .aboutme-box-big {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
     position: relative;
     max-width: 80%;
     margin: -2.5rem 0 1.5rem 0;
     margin-left: 9%;
     padding: 0.5rem 1rem;
     background-color: var(--space-dust);
-    opacity: .8;
+    opacity: 1;
     color: var(--neon-blue);
     border: 2px solid var(--gin);
     border-radius: 8px;
@@ -137,6 +141,9 @@ a {
 }
 
 .code-box-big {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
     position: relative;
     max-width: 20%;
     margin: -4rem 0 1.5rem 0;
@@ -144,7 +151,7 @@ a {
     padding: 0.5rem 1rem;
     background-color: var(--space-dust);
     color: var(--neon-blue);
-    opacity: .8;
+    opacity: 1;
     border: 2px solid var(--gin);
     border-radius: 8px;
     transition: all 0.5s ease-in-out;
@@ -154,9 +161,11 @@ a {
 
 .aboutme-box-big:hover {
     box-shadow: inset 0 0 20px var(--gin);
+    opacity: 1;
 }
 
 
 .code-box-big:hover {
     box-shadow: inset 0 0 20px var(--gin);
+    opacity: 1;
 }
