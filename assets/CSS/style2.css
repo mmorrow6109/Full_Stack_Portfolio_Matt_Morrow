@@ -323,10 +323,6 @@ footer {
     left: 42%;
 }
 
-/* @media (min-height: 680px), screen and (orientation: portrait) {
-    /* … */
-  } */
-
   @media (max-width: 500px) {
     .btn {
       font-size: 0.8rem;
