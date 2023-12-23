@@ -71,7 +71,7 @@ header {
     margin-right: 48%;
 }
 
-.work-image {
+.project-image {
     flex-direction: flex;
     width: 200px;
     height: 125px;
@@ -323,9 +323,20 @@ footer {
     left: 42%;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 600px) {
     body {
-        display: flex;
+        font-size: 18px;
+    }
+
+    header {
+        flex-direction: column;
+    }
+
+    .header-image {
+        width: 100%;
+    }
+
+    nav ul {
         flex-direction: column;
     }
 }
